@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:10-alpine
 
 ENV SERVER_ADDR 0.0.0.0
 ENV PASSWORD=
