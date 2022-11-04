@@ -5,9 +5,9 @@ services:
     build:
       context: ./ss-server
     ports:
-      - "65000-65200:65000-65200"
-      - "${SSMGR_PORT}:6002"
-      - "${SSGUI_PORT}:80"
+      - 65000-65200:65000-65200
+      - 6002:6002
+      - 8088:80
     volumes:
       - ./config:/root/.ssmgr
     restart: always
