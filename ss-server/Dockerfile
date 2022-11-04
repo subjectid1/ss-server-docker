@@ -40,8 +40,7 @@ RUN tar -zxf shadowsocks-libev-3.1.3.tar.gz \
     && rm -rf shadowsocks-libev-3.1.3
 
 RUN yarn global add shadowsocks-manager \
-    && echo $TZ > /etc/timezone \
-    && rm /etc/localtime
+    && echo $TZ > /etc/timezone 
 
 RUN mkdir /root/.ssmgr 
 
